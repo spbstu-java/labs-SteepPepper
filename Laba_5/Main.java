@@ -81,7 +81,7 @@ public class Main {
     }
 
 //        метод, принимающий на вход коллекцию строк и возвращающий все строки, начинающиеся с заданной буквы, отсортированные по алфавиту;
-    private static List<String> getFiltSort(List<String> stringList, String criteria) {
+    private static List<String> getFiltSort(Collection<String> stringList, String criteria) {
         return stringList.stream()
                 .filter(s -> s.substring(0, 1).equalsIgnoreCase(criteria.toLowerCase()))
                 .sorted()
